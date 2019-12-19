@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nf.njh.dao.PhoneDetailsDao">
+    <select id="getAllphone" resultType="com.nf.njh.entity.PhoneDetails">
+        select phone_id, phone_cpu, phone_type, phone_pixel, phone_batter, phone_screenSize, phone_Resolvingpwer, Runningmemory, list_Date, phone_rom, phone_name from phone_details
+
+    </select>
+
+
+    <insert id="addphone">
+        insert into phone_details(phone_cpu, phone_type, phone_pixel, phone_batter, phone_screenSize, phone_Resolvingpwer, Runningmemory, list_Date, phone_rom, phone_name)
+        values(#{cpu},#{phoneType},#{pixel},#{batter},#{screenSize},#{resolvingpwer},#{runningmemory},#{listdate},#{rom},#{phoneName})
+        values()
+    </insert>
+
+    <update id="updatephone">
+        update phone_details set phone_cpu=#{cpu},phone_type=#{phonetype},phone_pixel=#{pixel}, phone_batter=#{batter}, phone_screenSize=#{screensize}, phone_Resolvingpwer=#{resolvingpwer}, Runningmemory=#{runningmemory}, list_Date=#{listdate}, phone_rom=#{rom}, phone_name=#{phonename} where phone_id = #{phoneid}
+    </update>
+
+    <delete id="deletephone">
+        delete from phone_details where phone_id
+    </delete>
+
+
+
+
+</mapper>

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>nf.njh.xiangmu</groupId>
+    <artifactId>ssm-oupaiphone-management</artifactId>
+    <packaging>pom</packaging>
+    <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>oupaiphone-entity</module>
+        <module>oupaiphone-dao</module>
+        <module>oupaiphone-service</module>
+        <module>oupaiphone-controller</module>
+        <module>utils</module>
+    </modules>
+    <properties>
+        <project.buid.sourceEncoding>UTF-8</project.buid.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+
+        <junit.verion>4.12</junit.verion>
+        <spring.verion>5.2.0.RELEASE</spring.verion>
+        <pagehepler.verion>5.1.10</pagehepler.verion>
+        <jstl.verion>1.2</jstl.verion>
+        <servlet.verion>3.1.0</servlet.verion>
+        <mybatis.verion>3.5.2</mybatis.verion>
+        <mybatis.spring.verion>2.0.2</mybatis.spring.verion>
+        <dbutils.verion>1.7</dbutils.verion>
+        <log4j.verion>1.2.17</log4j.verion>
+        <mysql.verion>5.1.47</mysql.verion>
+        <jcl-over-slf4j.verion>1.7.28</jcl-over-slf4j.verion>
+        <logback.verion>1.2.3</logback.verion>
+        <druid.verion>1.1.20</druid.verion>
+        <aspectj.verion>1.9.4</aspectj.verion>
+        <servlet.version>3.1.0</servlet.version>
+        <hibernate.validator.version>6.1.0.Final</hibernate.validator.version>
+        <jackion.version>2.10.1</jackion.version>
+        <lombok.version>1.18.10</lombok.version>
+    </properties>
+<dependencyManagement>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>${spring.verion}</version>
+        </dependency>
+
+<!-- 测试 -->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.verion}</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>${spring.verion}</version>
+        </dependency>
+
+        <!-- spring事务tx transactionManager -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-tx</artifactId>
+            <version>${spring.verion}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-jdbc</artifactId>
+            <version>${spring.verion}</version>
+        </dependency>
+
+        <!--       spring 注解测试依赖         -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-test</artifactId>
+            <version>${spring.verion}</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- 连接池 -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid</artifactId>
+            <version>${druid.verion}</version>
+        </dependency>
+        <!-- mybatis和spring整合 -->
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis-spring</artifactId>
+            <version>${mybatis.spring.verion}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.mybatis</groupId>
+            <artifactId>mybatis</artifactId>
+            <version>${mybatis.verion}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+            <version>${pagehepler.verion}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet  </groupId>
+            <artifactId>jstl</artifactId>
+            <version>${jstl.verion}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${servlet.verion}</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>commons-dbutils</groupId>
+            <artifactId>commons-dbutils</artifactId>
+            <version>${dbutils.verion}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>${mysql.verion}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+            <version>${jcl-over-slf4j.verion}</version>
+        </dependency>
+
+<!--    效验    -->
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>${hibernate.validator.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>${jackion.version}</version>
+        </dependency>
+        <dependency>
+<!--      日志      -->
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.verion}</version>
+        </dependency>
+<!--  jsp标准标签库 -->
+        <dependency>
+            <groupId>jstl</groupId>
+            <artifactId>jstl</artifactId>
+            <version>${jstl.verion}</version>
+        </dependency>
+<!--   认代码简洁   -->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
+<!-- 容器 -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>${servlet.version}</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+</dependencyManagement>
+
+
+</project>

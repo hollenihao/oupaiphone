@@ -1,0 +1,44 @@
+#All {
+    width: 1365px;
+    background-color: white;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+}
+#projecttitle{
+    font-family: "楷体";
+    font-size: 20px;
+    color: rgb(51, 171, 160);
+    padding-left: 55px;
+}
+
+#daohang{
+    width: 200px;
+    float: left;
+    z-index: 1;
+}
+
+#Content_right{
+    width: 1160px;
+    height: 850px;
+    float: right;
+
+}
+
+#topdaohang{
+    width: 1160px;
+    height: 50px;
+    z-index: 2;
+    position:fixed;
+    float: left;
+}
+
+#topcontext{
+    margin-left: 800px;
+
+}
+#kuangjia{
+    margin-top: 60px;
+    float: left;
+    margin-left: 5px;
+}
