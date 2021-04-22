@@ -25,7 +25,7 @@
         <pagehepler.verion>5.1.10</pagehepler.verion>
         <jstl.verion>1.2</jstl.verion>
         <servlet.verion>3.1.0</servlet.verion>
-        <mybatis.verion>3.5.2</mybatis.verion>
+        <mybatis.verion>3.5.6</mybatis.verion>
         <mybatis.spring.verion>2.0.2</mybatis.spring.verion>
         <dbutils.verion>1.7</dbutils.verion>
         <log4j.verion>1.2.17</log4j.verion>
