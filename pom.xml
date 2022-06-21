@@ -29,7 +29,7 @@
         <mybatis.spring.verion>2.0.2</mybatis.spring.verion>
         <dbutils.verion>1.7</dbutils.verion>
         <log4j.verion>1.2.17</log4j.verion>
-        <mysql.verion>5.1.47</mysql.verion>
+        <mysql.verion>8.0.28</mysql.verion>
         <jcl-over-slf4j.verion>1.7.28</jcl-over-slf4j.verion>
         <logback.verion>1.2.3</logback.verion>
         <druid.verion>1.1.20</druid.verion>
