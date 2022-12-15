@@ -21,7 +21,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
 
         <junit.verion>4.12</junit.verion>
-        <spring.verion>5.2.0.RELEASE</spring.verion>
+        <spring.verion>5.2.20.RELEASE</spring.verion>
         <pagehepler.verion>5.1.10</pagehepler.verion>
         <jstl.verion>1.2</jstl.verion>
         <servlet.verion>3.1.0</servlet.verion>
